@@ -5,15 +5,17 @@ import 'firebase/firestore'
 import Filter from 'bad-words'
 import { ref, onUnmounted, computed } from 'vue'
 
-firebase.initializeApp({
-  apiKey: 'AIzaSyAJZ2X1xZEiQ8kFJxjH7qPknhA4aF9y9bY',
-  authDomain: 'vue-chat-app-27d21.firebaseapp.com',
-  projectId: 'vue-chat-app-27d21',
-  storageBucket: 'vue-chat-app-27d21.appspot.com',
-  messagingSenderId: '223042471176',
-  appId: '1:223042471176:web:7a12ed657e072e21b618bd',
-  measurementId: 'G-6N52LNM6YL'
-})
+firebase.initializeApp(
+    {
+        apiKey: "AIzaSyBnPN9ga02GLYCwUMz-4cJesgFWA0BcFTk",
+        authDomain: "chatrealtime-cc046.firebaseapp.com",
+        projectId: "chatrealtime-cc046",
+        storageBucket: "chatrealtime-cc046.appspot.com",
+        messagingSenderId: "89461653874",
+        appId: "1:89461653874:web:dc8c6d198d051bbaf65deb",
+        measurementId: "G-B937S40R4V"
+      }
+)
 
 const auth = firebase.auth()
 
