@@ -17,15 +17,9 @@
   </nav>
 </template>
 
-<script>
-import Avatar from './Avatar.vue'
-import { useAuth } from '@/firebase'
+<script setup>
+import Avatar from './UserAvatar.vue';
+import { useAuth } from '@/firebase';
 
-export default {
-  components: { Avatar },
-  setup() {
-    const { user, isLogin, signOut, signIn } = useAuth()
-    return { user, isLogin, signOut, signIn }
-  }
-}
+const { user, isLogin, signOut, signIn } = useAuth();
 </script>
