@@ -1,9 +1,8 @@
 <template>
-  <Nav />
-  <Chat />
+  <NavBar />
+  <router-view />
 </template>
 
 <script setup>
-import Nav from '@/components/NavBar.vue';
-import Chat from '@/components/ChatWindow.vue';
+import NavBar from '@/components/NavBar.vue';
 </script>
